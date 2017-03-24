@@ -1,0 +1,44 @@
+{
+  "name": "expressapp",
+  "version": "0.1.0",
+  "description": "webapp with express.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "webdev"
+  ],
+  "author": "espython",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/espython/expressWebSite/issues"
+  },
+  "homepage": "https://github.com/espython/expressWebSite#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "bcrypt": "^1.0.2",
+    "body-parser": "~1.16.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express-handlebars": "latest",
+    "express-session": "^1.15.1",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.4",
+    "morgan": "~1.7.0",
+    "node-gyp": "^3.5.0",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "pug": "~2.0.0-beta10",
+    "serve-favicon": "~2.3.2"
+  }
+}
