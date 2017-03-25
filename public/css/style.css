@@ -1,7 +1,15 @@
-.new{
-  margin-top: 60px;
-}
+body {
+  padding-top: 70px;
+ }
 
+/*#mainNav{
+  background-color:#24292E;
+
+}*/
+
+.navword{
+  color: white;
+}
 .navbarAllign{
   margin-right: 20px;
 }

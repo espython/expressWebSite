@@ -1,52 +1,58 @@
-
 <!-- Modal -->
-   <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
 
-        <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
-      </div>
-      <div class="modal-body">
-        <form action="post">
 
-            <div class="form-group">
-                <div class="form-group">
+                        <div class="entry">
+                            {{#if message }}
+                              <div class="alert alert-danger">
+                                {{message}}
+                              </div>
+                            {{/if}}
+                        </div>
+            </div>
+            <div class="modal-body">
+                <form action="/signup" method="post">
 
-                    <label for="userName">User name</label>
+                    <div class="form-group">
+                        <div class="form-group">
 
-                    <input type="text" name="userName" class="form-control" id="inputUserName" placeholder="Username">
+                            <label for="userName">User name</label>
 
-                </div>
+                            <input type="text" name="userName" class="form-control" id="inputUserName" placeholder="Username">
 
-                <label for="inputEmail">Email</label>
+                        </div>
 
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        <label for="inputEmail">Email</label>
+
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="inputPassword">Password</label>
+
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password">
+
+                    </div>
+
+                    <div class="checkbox">
+
+                        <label><input type="checkbox"> Remember me</label>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+
+                </form>
 
             </div>
-
-            <div class="form-group">
-
-                <label for="inputPassword">Password</label>
-
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
-
-            <div class="checkbox">
-
-                <label><input type="checkbox"> Remember me</label>
-
-            </div>
-
-            <button type="submit" class="btn btn-primary">Sign up</button>
-
-        </form>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+        </div>
     </div>
-  </div>
 </div>
