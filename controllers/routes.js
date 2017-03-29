@@ -12,6 +12,11 @@ app.get('/404', function(req, res){
   res.render('404', { message: req.flash('signupMessage') });
 });
 
+app.get('/upload', function (req,res) {
+  res.render('upload');
+
+})
+
 
 app.post('/signup',passport.authenticate('local-signup',{
   successRedirect: '/',

@@ -8,8 +8,10 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var flash = require('connect-flash');
-
+var multer = require('multer');
+var uploading = require('./controllers/uploading');
 var app = express();
+
 
 mongoose.connect('mongodb://localhost/users');
 
@@ -35,6 +37,7 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 //==============================================================================
 
 Router(app,passport);
+uploading(app);
 
 //==============================================================================
 
