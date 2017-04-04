@@ -20,7 +20,7 @@ require('./controllers/passport')(passport);
 app.set('views', __dirname + '/views')
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-app.use('/static', express.static('public'));
+app.use( express.static('public'));
 app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: false}));
